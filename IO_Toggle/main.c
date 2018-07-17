@@ -1,7 +1,7 @@
 #include "stm32f0xx.h"
 #include <stm32f0xx_gpio.h>
 #include <stm32f0xx_rcc.h>
-#include <neolib.h>
+#include <neolib.h>      //a library that was created is added to the project to use related functions 
 #include <string.h>
 
 
@@ -47,12 +47,12 @@ NVIC_InitTypeDef        NVIC_InitStructure;
 #define PushButton_GPIO GPIOA
 uint8_t ButtonRead = 0; //Initialize ButtonRead variable
 uint8_t ButtonRead2 = 0;
-int sayi=0;
+int sayi=0;   
 int control;
-int ara;
+int ara; 
 int ara2;
-int e;
-int K[24]={80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0};
+int e;                                        
+int K[24]={80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0,80,0,0};   //an array was described to use in function
 int main(void)
 {
 	//Enable clocks to both GPIOA (push button) and GPIOC (output LEDs)
@@ -75,8 +75,8 @@ int main(void)
 
 	while(1) //Infiinte loop!
 	{
-led(K);
-for(e=0;e<5100000;e++);
- allblue(K);
+led(K);    // function that described in library is called for lighting neopixel
+for(e=0;e<5100000;e++);       //make a delay for reset position of neopixel
+ allblue(K); // another function called for changing array and get a new color combination.
 	}
 }
