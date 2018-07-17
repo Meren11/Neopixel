@@ -3596,9 +3596,13 @@
       <ActiveTab>0</ActiveTab>
       <Doc>
         <Name>..\main.c</Name>
+        <ColumnNumber>106</ColumnNumber>
+        <TopLine>200</TopLine>
+        <CurrentLine>141</CurrentLine>
         <ColumnNumber>75</ColumnNumber>
         <TopLine>56</TopLine>
         <CurrentLine>79</CurrentLine>
+
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -3614,7 +3618,13 @@
       </Doc>
       <Doc>
         <Name>.\neolib.c</Name>
+<<<<<<< HEAD
         <ColumnNumber>8</ColumnNumber>
+=======
+
+        <ColumnNumber>9</ColumnNumber>
+        <ColumnNumber>7</ColumnNumber>
+>>>>>>> ee78979190d058df5ef5b16b8de8602f89b24337
         <TopLine>13</TopLine>
         <CurrentLine>14</CurrentLine>
         <Folding>1</Folding>
@@ -3622,7 +3632,7 @@
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>neolibh.h</Name>
+        <Name>C:\Users\win7\Documents\GitHub\Neopixel\IO_Toggle\MDK-ARM\neolibh.h</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>1</CurrentLine>
