@@ -8,20 +8,20 @@ void TIM3_IRQHandler(void)
         Led_State ^= (1 << 0);
     TIM_ClearITPendingBit(TIM3, TIM_FLAG_Update);
 }
-
-void positive(){
+ 
+void positive(){                           //function that provides '1' bit for neopixel
 GPIO_SetBits(GPIOC, GPIO_Pin_8);
         for(i=0;i<4;i++);
 GPIO_ResetBits(GPIOC, GPIO_Pin_8);
 }
-void negative(){
+void negative(){                          //function that provides '0' bit for neopixel
      GPIO_SetBits(GPIOC, GPIO_Pin_8);
         for(i=0;i<1;i++);
      GPIO_ResetBits(GPIOC, GPIO_Pin_8);
 	 
 }
 
-void green(){
+void green(){    // a function was written for green color.
 	    negative();
       negative();			
 			negative();
@@ -48,12 +48,12 @@ void green(){
 			negative();
 
 }
-void blue(){
+void blue(){                    //function was written for blue color
       negative();
       negative();			
 			negative();
       negative();      
-      negative();
+      negative();               // 24 bit was filled with smaller functions.
       negative();
       positive();
       negative();
@@ -75,7 +75,7 @@ void blue(){
 			positive();
 }
 
-void red(){
+void red(){                 //a function was written for red color
 negative();
       negative();			
 			negative();
@@ -112,7 +112,7 @@ int main(void)
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
  
     GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_8;
-    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;
+    GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_OUT;              // GPIO pins is described here
     GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_1;
     GPIO_InitStructure.GPIO_PuPd  = GPIO_PuPd_NOPULL;
@@ -138,7 +138,7 @@ int main(void)
 		 blue();
      blue();
      red();
-     red();
+     red();                            // 8 different color combination was created so a animation is got.
      blue();
      blue();
      green();
