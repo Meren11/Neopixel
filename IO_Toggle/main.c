@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include "stm32f0xx_conf.h"
 =======
 
@@ -30,7 +30,6 @@ void negative(){                          //function that provides '0' bit for n
 #include <stm32f0xx_rcc.h>
 #include <neolib.h>      //a library that was created is added to the project to use related functions 
 #include <string.h>
->>>>>>> ee78979190d058df5ef5b16b8de8602f89b24337
 
  
 static unsigned char Led_State = 0x00;
@@ -68,7 +67,7 @@ for(i=0;i<24;i++){
 
 }
 
-<<<<<<< HEAD
+
 	 
 
 
@@ -395,4 +394,4 @@ for(e=0;e<5100000;e++);       //make a delay for reset position of neopixel
 	}
 }
 
->>>>>>> ee78979190d058df5ef5b16b8de8602f89b24337
+
