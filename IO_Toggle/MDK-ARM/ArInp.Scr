@@ -1,0 +1,2 @@
+--create .\neopixellibrary.lib
+..\..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\mylibrary.c
